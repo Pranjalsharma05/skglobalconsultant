@@ -96,24 +96,35 @@
             left: 0;
         }
 
-        /* Carousel Styles */
-        .carousel {
-            width: 100%;
-            max-height: 600px; /* Adjust the height as needed */
-            overflow: hidden;
-        }
+       /* Carousel Styles */
+.carousel {
+    width: 100%;
+    max-height: 600px; /* Adjust the height as needed */
+    overflow: hidden;
+}
 
-        .carousel-inner img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
+.carousel-inner {
+    height: 100%; /* Set the height of the inner carousel */
+}
 
-        .carousel-caption {
-            background-color: rgba(0, 0, 0, 0.5); /* Adds a translucent background to captions */
-            padding: 20px;
-            border-radius: 10px;
-        }
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the entire area */
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5); /* Adds a translucent background to captions */
+    padding: 20px;
+    border-radius: 10px;
+    position: absolute; /* Make captions absolute to control position */
+    bottom: 20px; /* Distance from the bottom */
+    left: 50%; /* Center the caption */
+    transform: translateX(-50%); /* Center adjustment */
+    width: 80%; /* Optional: Adjust width of caption */
+    text-align: center; /* Center text */
+}
+
 
         /* Visa Categories Styles */
         .visa-categories {
@@ -285,6 +296,40 @@
             background-color: #3b70c0; /* Darker shade on hover */
         }
         
+      /* Footer Styles */
+.footer-section {
+    background-color: #f0f4ff; /* Light blue background color */
+    color: #333; /* Dark text color */
+    padding: 40px 20px;
+    border-top: 2px solid #4381de; /* Top border for distinction */
+}
+
+.footer-section h5 {
+    color: #4381de; /* Custom color for headings */
+    margin-bottom: 15px; /* Space below headings */
+}
+
+.footer-section p {
+    font-size: 14px; /* Font size for paragraph text */
+    line-height: 1.5; /* Line height for readability */
+}
+
+.footer-section .input-group {
+    margin-top: 10px; /* Space above input group */
+}
+
+.footer-section .btn-primary {
+    background-color: #4381de; /* Custom button color */
+    border: none; /* Remove border */
+}
+
+.footer-section .btn-primary:hover {
+    background-color: #3b70c0; /* Darker shade on hover */
+}
+
+.footer-section .text-center {
+    margin-top: 20px; /* Space above copyright */
+}
 
         
         
@@ -344,7 +389,7 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="assets/logo_without_background.png" class="d-block w-100" alt="Slide 3">
+                <img src="assets/slider2.jpg" class="d-block w-100" alt="Slide 3">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Third Slide</h5>
                     <p>Description for the third slide.</p>
@@ -533,6 +578,46 @@
         </aside>
     </article>
 </section>
+
+
+
+<footer class="footer-section py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h5>About Us</h5>
+                <p>Sed gravida nisl a porta tincidunt. Integer aliquam nisi sit amet magna suscipit, fermentum mattis erat rutrum. Porta semper lacus cursus.</p>
+                <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+            <div class="col-md-4">
+                <h5>Office Info</h5>
+                <p>Company: SK Global Consultant</p>
+                <p>Phone: +91 75910 36760</p>
+                <p>Email: <a href="mailto:sk.globalcounsaltant@gmail.com">sk.globalcounsaltant@gmail.com</a></p>
+                <p>Address: Ghumarwin,<br> District: Bilaspur,<br> State: Himachal Pradesh,<br> PIN: 174021, India</p>
+                <p><a href="https://www.instagram.com/sk.globalcounsaltant?igsh=dDlxdnJ4a2I1Y3Vv" target="_blank">Follow us on Instagram</a></p>
+            </div>
+            <div class="col-md-4">
+                <h5>NewsLetter</h5>
+                <p>Subscribe to our newsletter to get our latest updates & news</p>
+                <form>
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control" placeholder="Enter your email" required>
+                        <div class="input-group-append">
+                            <button class="btn btn-primary" type="submit">Subscribe</button>
+                        </div>
+                    </div>
+                </form>
+                <h5>Recent Post</h5>
+                <p><strong>Admin</strong> December 30, 2020<br>Make a proper salad with high proteins.</p>
+                <p><strong>Admin</strong> December 29, 2020<br>Make a proper salad with high proteins.</p>
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <p>&copy; 2024 SK Global Consultant. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
 
     <!-- Optional JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
