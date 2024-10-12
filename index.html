@@ -531,6 +531,31 @@
         .gap {
             margin-right: 15px; /* Adjust the gap size as needed */
         }
+        .why-study-abroad {
+            background-color: #f2f9ff;
+            padding: 40px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .text-content {
+            padding-right: 20px; /* Adjust spacing between text and image */
+        }
+        
+        .reason-title {
+            color: #4381de;
+            margin-top: 20px; /* Add some spacing above each title */
+        }
+        
+        .reason-description {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px; /* Add space between descriptions */
+        }
+        
+        img {
+            border-radius: 10px; /* Rounded corners for the image */
+        }
         
         
     </style>
@@ -579,12 +604,10 @@
     <!-- Full Width Carousel -->
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -595,31 +618,37 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="assets/background.avif" class="d-block w-100" alt="Slide 2">
+                <img src="assets/world_map.jpg" class="d-block w-100" alt="Slide 2">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Second Slide</h5>
                     <p>Description for the second slide.</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="assets/slider2.jpg" class="d-block w-100" alt="Slide 3">
+                <img src="assets/visa-img for slider.jpg" class="d-block w-100" alt="Slide 3">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Third Slide</h5>
                     <p>Description for the third slide.</p>
                 </div>
             </div>
+            <div class="carousel-item">
+                <img src="assets/slider2.jpg" class="d-block w-100" alt="Slide 4">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Fourth Slide</h5>
+                    <p>Description for the fourth slide.</p>
+                </div>
+            </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
     </div>
+    
     <section class="moving-text-section py-5">
         <div class="container">
             <h2 class="text-center mb-4">Welcome to SK.GlobalConsultant</h2>
@@ -668,7 +697,39 @@
             </div>
         </div>
     </section>
-
+    <section class="why-study-abroad">
+        <div class="container">
+            <h2 class="text-center mb-4">Why Study Abroad?</h2>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <img src="assets/study-abroad.jpg" class="img-fluid" alt="Study Abroad">
+                </div>
+                <div class="col-lg-6">
+                    <div class="text-content">
+                        <h5 class="reason-title">Cultural Experience</h5>
+                        <p class="reason-description">Immerse yourself in a new culture, meet new people, and broaden your perspectives.</p>
+    
+                        <h5 class="reason-title">Quality Education</h5>
+                        <p class="reason-description">Access world-class education and gain knowledge from experienced professors and researchers.</p>
+    
+                        <h5 class="reason-title">Career Opportunities</h5>
+                        <p class="reason-description">Enhance your resume and increase your employability in the global job market.</p>
+    
+                        <h5 class="reason-title">Language Skills</h5>
+                        <p class="reason-description">Improve your language skills by studying in a country where the language is spoken.</p>
+    
+                        <h5 class="reason-title">Personal Growth</h5>
+                        <p class="reason-description">Develop independence, confidence, and adaptability as you navigate new challenges.</p>
+    
+                        <h5 class="reason-title">Networking Opportunities</h5>
+                        <p class="reason-description">Build a global network of friends, mentors, and professional contacts.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    
     <section id="offering" class="offering-section py-5">
         <div class="container text-center">
             <h2 class="section-title">Our Offerings</h2>
